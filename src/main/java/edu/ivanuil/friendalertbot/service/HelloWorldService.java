@@ -15,7 +15,7 @@ public class HelloWorldService {
     private final HelloWorldRepository helloWorldRepository;
 
     public HelloWorldEntity greet() {
-        return helloWorldRepository.findAll().getFirst();
+        return helloWorldRepository.findAll().get(0);
     }
 
     @PostConstruct
